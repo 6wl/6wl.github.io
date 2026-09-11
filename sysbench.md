@@ -151,3 +151,36 @@ Threads fairness:
     events (avg/stddev):           12500.0000/99.81
 	execution time (avg/stddev):   38.2900/0.00
 
+
+# Steam Deck - AMD Custom APU 0932
+
+sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+
+Running the test with following options:
+Number of threads: 8
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  2658.73
+
+General statistics:
+    total time:                          37.6109s
+    total number of events:              100000
+
+Latency (ms):
+         min:                                    1.50
+         avg:                                    3.01
+         max:                                   12.54
+         95th percentile:                        4.18
+         sum:                               300853.88
+
+Threads fairness:
+    events (avg/stddev):           12500.0000/80.58
+    execution time (avg/stddev):   37.6067/0.00
