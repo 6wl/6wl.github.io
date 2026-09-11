@@ -49,3 +49,37 @@ Idle Latency:    12.71 ms   (jitter: 0.18ms, low: 12.39ms, high: 12.88ms)
                  13.07 ms   (jitter: 0.77ms, low: 12.26ms, high: 18.96ms)
  Packet Loss: Not available.
   Result URL: https://www.speedtest.net/result/c/2b449875-0b15-40c1-bcd1-26d15d8d4796
+
+
+# Rock5bPlus
+
+sysbench 1.0.20 (using system LuaJIT 2.1.1767980792)
+
+Running the test with following options:
+Number of threads: 8
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  5391.44
+
+General statistics:
+    total time:                          18.5460s
+    total number of events:              100000
+
+Latency (ms):
+         min:                                    1.03
+         avg:                                    1.48
+         max:                                    5.96
+         95th percentile:                        2.66
+         sum:                               148333.78
+
+Threads fairness:
+    events (avg/stddev):           12500.0000/5482.51
+    execution time (avg/stddev):   18.5417/0.00
