@@ -1,6 +1,6 @@
 ## Command
 
-- sysbench cpu --cpu-max-prime=20000 --threads=12 --time=0 --events=100000 run
+- sysbench cpu --cpu-max-prime=20000 --threads=<num_cores> --time=0 --events=100000 run
 
 # Orion o6
 
@@ -83,3 +83,71 @@ Latency (ms):
 Threads fairness:
     events (avg/stddev):           12500.0000/5482.51
     execution time (avg/stddev):   18.5417/0.00
+
+# Dragonq8b
+
+sysbench 1.0.20 (using system LuaJIT 2.1.1761786044)
+
+Running the test with following options:
+Number of threads: 8
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  9269.01
+
+General statistics:
+    total time:                          10.7876s
+    total number of events:              100000
+
+Latency (ms):
+         min:                                    0.77
+         avg:                                    0.86
+         max:                                    6.86
+         95th percentile:                        0.97
+         sum:                                86275.28
+
+Threads fairness:
+    events (avg/stddev):           12500.0000/1281.31
+    execution time (avg/stddev):   10.7844/0.00
+
+
+# DellXPS13 9370 - i7-8550U CPU @ 1.80GHz
+
+sysbench 1.0.20 (using system LuaJIT 2.1.1767980792)
+
+Running the test with following options:
+Number of threads: 8
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  2611.06
+
+General statistics:
+    total time:                          38.2972s
+    total number of events:              100000
+
+Latency (ms):
+         min:                                    2.09
+         avg:                                    3.06
+         max:                                   23.30
+         95th percentile:                        4.03
+         sum:                               306319.98
+
+Threads fairness:
+    events (avg/stddev):           12500.0000/99.81
+	execution time (avg/stddev):   38.2900/0.00
+
