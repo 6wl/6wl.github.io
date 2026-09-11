@@ -34,3 +34,18 @@ Latency (ms):
 Threads fairness:
     events (avg/stddev):           8333.3333/2686.78
     execution time (avg/stddev):   10.0672/0.00
+
+# Speedtest cli
+- speedtest -s 48475
+
+   Speedtest by Ookla
+
+      Server: YouFibre - Manchester (id: 48475)
+         ISP: BRSK
+Idle Latency:    12.71 ms   (jitter: 0.18ms, low: 12.39ms, high: 12.88ms)
+    Download:  4627.98 Mbps (data used: 5.7 GB)                                                   
+                 68.43 ms   (jitter: 45.60ms, low: 12.49ms, high: 336.22ms)
+      Upload:  4639.38 Mbps (data used: 5.2 GB)                                                   
+                 13.07 ms   (jitter: 0.77ms, low: 12.26ms, high: 18.96ms)
+ Packet Loss: Not available.
+  Result URL: https://www.speedtest.net/result/c/2b449875-0b15-40c1-bcd1-26d15d8d4796
